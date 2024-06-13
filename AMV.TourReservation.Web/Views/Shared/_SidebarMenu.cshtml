@@ -1,0 +1,23 @@
+﻿<div class="sidebar">
+    <h2 class="text-center text-light">AMV Travel</h2>
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <a href="#" id="login" data-url="@Url.Action("Login", "Auth")" class="dashboard-nav-item nav-link"><i class="fas fa-sign-out-alt"></i> Login </a>
+    }
+    else
+    {
+        <a href="#" id="tourscardsLink" class="nav-link" data-url="@Url.Action("Index", "Home")">
+            <i class="fas fa-home"></i> Inicio
+        </a>
+
+        <a href="#" id="toursLink" class="nav-link" data-url="@Url.Action("GetTours", "Tour")">
+            <i class="fa-solid fa-earth-americas"></i> Tours
+        </a>
+
+        <hr />
+
+        <div class="nav-item-divider"></div>
+        <a href="#" id="logout" class=" nav-link" data-url="@Url.Action("Logout", "Auth")"><i class="fas fa-sign-out-alt"></i> Cerrar Sesion </a>
+
+    }
+</div>

@@ -1,0 +1,42 @@
+﻿<!-- Modal para añadir tour -->
+<div class="modal fade" id="addTourModal" tabindex="-1" role="dialog" aria-labelledby="addTourModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addTourModalLabel">Añadir Tour</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulario para añadir tour -->
+                <form id="addTourForm" method="post">
+                    <div class="form-group">
+                        <label for="tourName">Nombre</label>
+                        <input type="text" class="form-control" id="tourName" name="tourName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tourDestination">Destino</label>
+                        <input type="text" class="form-control" id="tourDestination" name="tourDestination" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tourStartDate">Fecha de Inicio</label>
+                        <input type="date" class="form-control" id="tourStartDate" name="tourStartDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tourEndDate">Fecha de Fin</label>
+                        <input type="date" class="form-control" id="tourEndDate" name="tourEndDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tourPrice">Precio</label>
+                        <input type="number" class="form-control" id="tourPrice" name="tourPrice" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button class="btn btn-primary" data-url="@Url.Action("AddTour","Tour")" id="saveTourBtn">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>

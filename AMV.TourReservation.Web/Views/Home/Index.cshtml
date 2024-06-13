@@ -1,0 +1,27 @@
+﻿@model List<TourViewModel>
+@if (!User.Identity.IsAuthenticated)
+{
+    <h1>Debe estar logueado para acceder a la aplicación.</h1>
+}
+else
+{
+    <div id="cards" class="m-3">
+        @if (Model.Count != 0)
+        {
+            @foreach (var tour in Model)
+            {
+                <div class="card flex">
+                    <div class="card-body">
+                        @Html.Raw(@tour.ShowInformation())
+                    </div>
+                    <div class="d-flex p-1 justify-content-end">
+                        <a href="#" class="btn btn-primary mr-2 float-right" data-toggle="modal" id="modalReservation" data-tourId="@tour.Id" data-target="#addReservationModal">Agregar Reserva</a>
+                        <a href="#" class="btn btn-primary float-right" id="seeReservations" data-tourId="@tour.Id" data-url="@Url.Action("GetReservationsByTour", "Reservation")"> Ver Reservas</a>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    @await Html.PartialAsync("Modals/_ModalAddReservation")
+}

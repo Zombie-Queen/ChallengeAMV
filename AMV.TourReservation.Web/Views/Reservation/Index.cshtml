@@ -1,0 +1,24 @@
+﻿@model List<ReservationViewModel>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Cliente</th>
+            <th scope="col">Fecha Reserva</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                @Html.Raw(reservation.ShowInformation());
+                <td>
+                    <button class="btn btn-danger btn-delete-r" data-reservationId="@reservation.Id" data-reservationlist="@Url.Action("GetReservationsByTour", "Reservation")" data-deleteReservation="@Url.Action("DeleteReservation", "Reservation")">
+                        <i class="fas fa-trash-alt"></i> Eliminar Reserva
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

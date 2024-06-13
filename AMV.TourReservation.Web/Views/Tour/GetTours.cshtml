@@ -1,0 +1,38 @@
+﻿@model List<TourViewModel>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Destino</th>
+                <th>Fecha Comienzo</th>
+                <th>Fecha Fin</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tour in Model)
+            {
+                <tr>
+                    <td>@tour.Name</td>
+                    <td>@tour.Destination</td>
+                    <td>@tour.StartDate.ToShortDateString()</td>
+                    <td>@tour.EndDate.ToShortDateString()</td>
+                    <td>@tour.Price</td>
+                    <td>
+                        <button class="btn btn-danger btn-delete" data-tourId="@tour.Id" data-tourlist="@Url.Action("Index","Tour")" data-tour="@Url.Action("DeleteTour","Tour")">
+                            <i class="fas fa-trash-alt"></i> Eliminar
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<a href="#" class="btn btn-primary" data-toggle="modal" id="modalTour" data-target="#addTourModal">Agregar Tour</a>
+
+@await Html.PartialAsync("Modals/_ModalAddTour")
+

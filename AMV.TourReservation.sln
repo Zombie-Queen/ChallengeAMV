@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34902.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMV.TourReservation.API", "AMV.TourReservation.API\AMV.TourReservation.API.csproj", "{382C1E4D-B8C2-4A8F-B6FC-EB44D939D53B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMV.TourReservation.Domain", "AMV.TourReservation.Domain\AMV.TourReservation.Domain.csproj", "{AB396CE6-6229-40A8-8A8C-220D62C2D06C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMV.TourReservation.Application", "AMV.TourReservation.Application\AMV.TourReservation.Application.csproj", "{BFA444DE-C40E-4280-9F14-40996DD1DCA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMV.TourReservation.Infrastructure", "AMV.TourReservation.Infrastructure\AMV.TourReservation.Infrastructure.csproj", "{03B3065D-9D2B-4FDC-8AB5-3B105E176F4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMV.TourReservation.Web", "AMV.TourReservation.Web\AMV.TourReservation.Web.csproj", "{97F19E5B-8119-4C65-AB87-9DB8DF88218D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{382C1E4D-B8C2-4A8F-B6FC-EB44D939D53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{382C1E4D-B8C2-4A8F-B6FC-EB44D939D53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{382C1E4D-B8C2-4A8F-B6FC-EB44D939D53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{382C1E4D-B8C2-4A8F-B6FC-EB44D939D53B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB396CE6-6229-40A8-8A8C-220D62C2D06C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB396CE6-6229-40A8-8A8C-220D62C2D06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB396CE6-6229-40A8-8A8C-220D62C2D06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB396CE6-6229-40A8-8A8C-220D62C2D06C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA444DE-C40E-4280-9F14-40996DD1DCA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA444DE-C40E-4280-9F14-40996DD1DCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA444DE-C40E-4280-9F14-40996DD1DCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA444DE-C40E-4280-9F14-40996DD1DCA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B3065D-9D2B-4FDC-8AB5-3B105E176F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B3065D-9D2B-4FDC-8AB5-3B105E176F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B3065D-9D2B-4FDC-8AB5-3B105E176F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B3065D-9D2B-4FDC-8AB5-3B105E176F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F19E5B-8119-4C65-AB87-9DB8DF88218D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F19E5B-8119-4C65-AB87-9DB8DF88218D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F19E5B-8119-4C65-AB87-9DB8DF88218D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F19E5B-8119-4C65-AB87-9DB8DF88218D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {793D34DD-3749-47BB-AACD-BF38099AFA20}
+	EndGlobalSection
+EndGlobal
